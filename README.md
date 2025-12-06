@@ -4,7 +4,7 @@ This repository contains my professional CV/resume, written in LaTeX.
 
 ## Preview
 
-![CV Preview](cv.png)
+![CV Preview](figures/cv.png)
 
 ## Structure
 
