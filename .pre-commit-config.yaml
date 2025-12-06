@@ -1,0 +1,30 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.14.0
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.15.0
+    hooks:
+      - id: mypy
+        additional_dependencies: [typer, types-Pillow]
+
+  - repo: local
+    hooks:
+      - id: build-latex
+        name: Build LaTeX CV
+        entry: bash -c 'mkdir -p .output && latexmk -pdf -output-directory=.output cv.tex'
+        language: system
+        files: '\.(tex)$'
+        pass_filenames: false
+
+      - id: generate-cv-figure
+        name: Generate CV Figure
+        entry: bash -c 'uv run python main.py --build-dir .output && git add figures/cv.png'
+        language: system
+        files: '\.(tex)$'
+        pass_filenames: false
+        stages: [pre-commit]

@@ -10,7 +10,7 @@ app = typer.Typer()
 
 # Define project directories
 PROJ_DIR = Path(__file__).parent.resolve()
-BUILD_DIR = Path(os.getenv("BUILD_DIR", PROJ_DIR / "build")).resolve()
+BUILD_DIR = Path(os.getenv("BUILD_DIR", PROJ_DIR / ".output")).resolve()
 FIGURES_DIR = Path(os.getenv("FIGURES_DIR", PROJ_DIR / "figures")).resolve()
 
 
@@ -20,12 +20,12 @@ FIGURES_DIR = Path(os.getenv("FIGURES_DIR", PROJ_DIR / "figures")).resolve()
 @app.command("genfig")
 def generate_cv_figure(
     output_dir: Annotated[
-        Path, typer.Argument(..., help="Output directory for the generated figure")
+        Path, typer.Option(help="Output directory for the generated figure")
     ] = FIGURES_DIR,
     build_dir: Annotated[
-        Path, typer.Argument(..., help="Build directory containing CV data")
+        Path, typer.Option(help="Build directory containing CV data")
     ] = BUILD_DIR,
-):
+) -> None:
     """
     Generate a figure for the CV based on data in the build directory.
     """
