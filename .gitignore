@@ -1,0 +1,6 @@
+# Translations
+*.mo
+*.pot
+
+# Text compile output
+.output

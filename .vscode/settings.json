@@ -1,0 +1,17 @@
+{
+	"files.encoding": "utf8",
+	"editor.wordWrap": "on",
+	"editor.formatOnSave": true,
+	"editor.suggestSelection": "recentlyUsedByPrefix",
+	"[latex]": {
+		"editor.defaultFormatter": "James-Yu.latex-workshop"
+	},
+	"[tex]": {
+		"editor.defaultFormatter": "iamhyc.overleaf-workshop"
+	},
+	"latex-workshop.view.pdf.viewer": "tab",
+	"latex-workshop.latex.autoBuild.run": "onSave",
+	"latex-workshop.latex.outDir": "%DIR%/.output",
+	"latex-workshop.formatting.latex": "tex-fmt",
+	"cSpell.words": ["esparsidade"]
+}

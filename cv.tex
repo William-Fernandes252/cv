@@ -1,0 +1,203 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\setlength{\footskip}{4pt}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+\item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=*]}
+    \newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}}
+\newcommand{\resumeItemListStart}{
+\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/william-fernandes-dias-b6a246217/}{\Large William Fernandes Dias}} & \href{mailto:william.winchester1967@gmail.com}{william.winchester1967@gmail.com}\\
+  \href{https://www.linkedin.com/in/william-fernandes-dias-b6a246217/}{linkedin.com/in/william-fernandes-dias} & +55 (11) 96485-8088 \\
+  São Paulo, SP, Brazil & \\
+\end{tabular*}
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+\resumeSubHeadingListStart
+\item{
+  \textbf{AI \& NLP}{: LangChain, RAG, OCR, Agents, OpenAI, Azure AI, Prompt Engineering}
+  \hfill
+}
+\item{
+  \textbf{Backend \& Automation}{: Python, FastAPI, Django, Node.js, Celery, Selenium, n8n}
+  \hfill
+}
+\item{
+  \textbf{Cloud \& DevOps}{: AWS (Lambda, ECS, S3, EventBridge), Docker, Serverless, CI/CD, Grafana}
+  \hfill
+}
+\item{
+  \textbf{Data \& Databases}{: PostgreSQL, MySQL, Redis, RabbitMQ }
+  \hfill
+}
+\item{
+  \textbf{Languages}{: English (C1, TOEFL ITP), Portuguese}
+}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Accenture}{São Paulo, Brazil}
+{AI Engineer (Python \& Cloud)}{Sep. 2025 --- Present}
+\resumeItemListStart
+\resumeItem{Multi-Agent Orchestration}
+{Architected and strengthened a multi-agent orchestration API for document-intelligence workflows by introducing specialized agent teams and custom toolchains to autonomously validate documents and extract structured data. Leveraged NLP techniques, FastAPI, LangChain, OCR, RAG, and Azure OpenAI to materially reduce manual verification overhead.}
+\resumeItem{Meeting Summarization}
+{Automated the generation of structured summaries of meetings using n8n, Python, Generative AI (GenAI), and prompt engineering, improving operational efficiency.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Nelogica}{São Paulo, Brazil}
+{Software Engineer (Backend \& AWS Cloud)}{Jul. 2024 --- Aug. 2025}
+\resumeItemListStart
+\resumeItem{Serverless Migration}
+{Contributed to the conversion of a monolithic background worker to serverless event-driven microservices using FastAPI, Docker, and S3, deploying via AWS Lambda, ECR, and ECS.}
+\resumeItem{Data Extraction}
+{Automated data extraction workflows via web scraping and API integration using Python and Selenium, reducing manual workload and improving reliability.}
+\resumeItem{Query Optimization}
+{Optimized SQL query performance by refactoring insertions and restructuring subqueries, reducing server resource allocation and execution time by 80\%.}
+\resumeItem{Financial Tools}
+{Developed financial market tools, including data analysis and investment portfolio consolidation using PHP, HTML5, CSS3, MySQL, and Redis.}
+\resumeItem{Code Quality}
+{Conducted code reviews, resolving bugs pre-deployment, enforcing clean code, and ensuring adherence to OOP and SOLID principles.}
+\resumeItem{Testing}
+{Created unit, integration, and end-to-end tests for core features using Pytest, increasing test coverage and stability.}
+\resumeItemListEnd
+
+\resumeSubheading
+{EthQuo (Freelance)}{Remote}
+{Full Stack Developer (Python \& Django)}{Sep. 2024 --- Dec. 2024}
+\resumeItemListStart
+\resumeItem{SaaS Development}
+{Built and maintained core features for Disqlose, a SaaS compliance platform, using Python, Django, PostgreSQL, and AWS.}
+\resumeItem{Messaging \& Reporting}
+{Implemented email messaging and PDF dossier generation functionalities, improving user experience and operational efficiency.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Colmeia (Contract)}{Remote}
+{Chatbot Developer}{Jan. 2024 --- Apr. 2024}
+\resumeItemListStart
+\resumeItem{Chatbot Development}
+{Developed and maintained AI-based chatbots using low-code platforms, optimizing communication between clients and users.}
+\resumeItem{API Integration}
+{Implemented integration with a carrier API using Typescript and Node.js, reducing failure rates in product deliveries.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Up.p}{São Paulo, Brazil}
+{Software Engineering Intern (Microservices \& Backend)}{Jun. 2022 --- Sep. 2023}
+\resumeItemListStart
+\resumeItem{API Integration}
+{Led end-to-end development of projects integrating third-party APIs using Django REST Framework, PostgreSQL, and JWT based authentication.}
+\resumeItem{Microservices}
+{Automated business operations by developing microservices for data extraction from 100k+ clients using JavaScript, AWS Lambda, and Serverless.}
+\resumeItem{Automated Reporting}
+{Implemented scheduled XML report generation and delivery using RabbitMQ, Python, and Celery, reducing manual effort.}
+\resumeItem{Testing \& QA}
+{Developed unit and integration tests based on critical use cases using Pytest and Jest, ensuring availability and robustness.}
+\resumeItem{Platform Enhancement}
+{Enhanced client management platforms (PHP/Vue.js) and resolved critical rate limiting issues in HubSpot integration using PostgreSQL-based token buckets.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Tamandutech (Voluntary)}{São Paulo, Brazil}
+{Frontend Developer}{Jul. 2022 --- Present}
+\resumeItemListStart
+\resumeItem{Dashboard Development}
+{Enhanced a Line Follower robot dashboard using Typescript, Vue.js, NoSQL, and GCP, enabling real-time monitoring and visualization.}
+\resumeItem{Authentication}
+{Integrated Firebase for OAuth 2.0 authentication with Github, streamlining team verification and security.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Django Activity Tracker}
+{Created a reusable Django app for logging user actions (CRUD) and auditing behavior. Integrated with Django REST Framework and achieved comprehensive Pytest coverage.}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Universidade Federal do ABC}{São Paulo, Brazil}
+{Bachelor of Computer Science}{May 2025 --- Apr. 2026}
+\resumeSubheading
+{Universidade Federal do ABC}{São Paulo, Brazil}
+{Bachelor of Science and Technology}{Feb. 2020 --- Apr. 2025}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
