@@ -1,7 +1,7 @@
 \documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
-\usepackage[empty]{fullpage}
+\usepackage[margin=0.65in,top=0.55in,bottom=0.5in,footskip=0.2in]{geometry}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
@@ -16,13 +16,6 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-0.6in}
-\addtolength{\textheight}{1.2in}
-
 \urlstyle{same}
 
 \raggedbottom
@@ -31,34 +24,34 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-8pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
 \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2}
   }
 }
 
 % Custom commands
 \newcommand{\resumeItemShort}[1]{
 \item\small{
-    #1 \vspace{-2pt}
+    #1
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}
+  \vspace{0pt}
 \item
   \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
     \textit{\small#3} & \textit{\small #4} \\
-  \end{tabular*}\vspace{-5pt}
+  \end{tabular*}\vspace{-3pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-2pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -67,9 +60,9 @@
     \newcommand{\resumeSubHeadingListEnd}{
 \end{itemize}}
 \newcommand{\resumeItemListStart}{
-\begin{itemize}}
+\begin{itemize}[nosep,leftmargin=*]}
     \newcommand{\resumeItemListEnd}{
-\end{itemize}\vspace{-5pt}}
+\end{itemize}\vspace{-4pt}}
 
 \begin{document}
 
