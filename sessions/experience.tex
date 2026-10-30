@@ -3,34 +3,40 @@
 
 \resumeSubheading
 {PwC}{United States (Remote)}
-{AI Engineer (LangChain \& Full Stack)}{02/2026 --- Present}
+{AI Engineer (LangChain, Data Engineering \& Full Stack)}{02/2026 --- Present}
 \resumeItemListStart
 \resumeItemShort
-{Designed an evaluation library for agents capable of generating insights from data across multiple domains (marketing, sales, finance) using \textbf{Python}, \textbf{LangChain}, \textbf{DeepEval}, and \textbf{RAGAS} to capture critical metrics like faithfulness, groundedness and tool-calling accuracy (\textbf{Text-to-SQL}, \textbf{Document RAG}). Integrated this into a \textbf{CI} workflow to catch regressions before deploys, ensuring responsible-AI compliance, preventing end-user hallucinations, and tightly controlling token usage;}
+{Architected an end-to-end \textbf{ETL} data pipeline using the \textbf{Medallion Architecture} to process massive volumes of procurement data (purchase requisitions and orders), orchestrating \textbf{LLMs} for automated schema and column mapping to ensure accurate delivery into downstream targets;}
 \resumeItemShort
-{Optimized a procurement dashboard (SPA + REST API) for usability and performance, leveraging SQLAlchemy events to pre-compute summaries over \textbf{millions} of SAP records and \textbf{React Query} for strategic client-side caching, reducing \textbf{LCP} and \textbf{p99} response times by \textbf{99\%} (from 3 minutes to less 1 second) to deliver a seamless experience for finance operators.}
+{Designed a data quality and \textbf{LLM} evaluation framework for multi-domain agents (marketing, sales, finance) using \textbf{Python}, \textbf{LangChain}, \textbf{DeepEval}, and \textbf{RAGAS} to enforce data-quality gates, capturing critical metrics like faithfulness, groundedness, and tool-calling accuracy (\textbf{Text-to-SQL}, \textbf{Document RAG});}
+\resumeItemShort
+{Integrated automated quality checks into \textbf{CI/CD} workflows and configured application infrastructure using \textbf{Kubernetes (Helm Charts)}, catching regressions before deployment, preventing hallucinations, and tightly controlling token usage;}
+\resumeItemShort
+{Optimized a high-volume procurement platform (SPA + REST API) over \textbf{millions} of SAP records by leveraging \textbf{SQLAlchemy} events for pre-computed summaries and \textbf{React Query} for caching, reducing \textbf{p99} response times by \textbf{99\%} (from 3 minutes to $<$1 second).}
 \resumeItemListEnd
 
 \resumeSubheading
 {Accenture}{São Paulo, Brazil (On-site)}
-{AI Engineer (Python \& GCP)}{09/2025 --- 02/2026}
+{AI Engineer (Python, Data Extraction \& GCP)}{09/2025 --- 02/2026}
 \resumeItemListStart
 \resumeItemShort
-{Architected a cloud-native, multi-tenant agent orchestration platform, supporting integration with external tools like web search and \textbf{OCR}, using \textbf{FastAPI}, \textbf{LangChain}, \textbf{Vertex AI} and different \textbf{RAG} strategies to autonomously validate documents and extract structured data, reducing manual verification overhead by \textbf{80\%};}
+{Architected a cloud-native, multi-tenant document extraction and agent orchestration platform on \textbf{GCP} (\textbf{Vertex AI}, \textbf{Cloud Run}, \textbf{Cloud Storage}, \textbf{BigQuery}) and \textbf{FastAPI}, combining \textbf{OCR} (\textbf{Azure Document Intelligence}), \textbf{PyPDF2}, and \textbf{LangChain} to autonomously validate unstructured documents and extract structured data, reducing manual verification overhead by \textbf{80\%};}
 \resumeItemShort
-{Automated meeting summarization workflows using \textbf{n8n} and \textbf{Python}, employing advanced prompt engineering to deliver structured insights for client advisory teams.}
+{Enforced strict schema validation and data reliability across extraction workflows using \textbf{Pydantic} and advanced \textbf{RAG} strategies, guaranteeing that unstructured PDFs and free-text sources landed accurately in downstream \textbf{BigQuery} tables;}
+\resumeItemShort
+{Automated unstructured text processing workflows for meeting transcripts (Google Meet) using \textbf{Python} and \textbf{n8n}, employing advanced prompt engineering and \textbf{LLM} orchestration to extract structured insights for client advisory teams.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Nelogica}{São Paulo, Brazil (On-site)}
-{Software Engineer (Backend \& AWS)}{07/2024 --- 08/2025}
+{Software Engineer (Backend, Data Pipelines \& AWS)}{07/2024 --- 08/2025}
 \resumeItemListStart
 \resumeItemShort
-{Migrated monolithic background workers to event-driven microservices using \textbf{FastAPI}, \textbf{Docker}, and \textbf{AWS Lambda}, significantly improving fault isolation and system scalability;}
+{Migrated monolithic background workers to event-driven microservices using \textbf{Python}, \textbf{FastAPI}, \textbf{Docker}, and \textbf{AWS Lambda}, implementing idempotency patterns to ensure fault isolation, data consistency, and system scalability;}
 \resumeItemShort
-{Optimized critical SQL queries by refactoring subqueries and indexes, reducing execution time and server resource allocation by \textbf{80\%};}
+{Engineered automated data extraction and web scraping pipelines using \textbf{Python} and \textbf{Selenium}, integrating external APIs to eliminate manual data ingestion workloads;}
 \resumeItemShort
-{Engineered automated web scraping and API integration pipelines using \textbf{Python} and \textbf{Selenium}, eliminating manual data extraction workloads.}
+{Optimized critical \textbf{SQL} queries by refactoring complex subqueries and indexes, reducing execution time and server resource allocation by \textbf{80\%}.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -38,9 +44,7 @@
 {Chatbot Developer}{01/2024 --- 04/2024}
 \resumeItemListStart
 \resumeItemShort
-{Developed and enhanced AI-powered chatbots on low-code platforms to enhance digital communication channels for enterprise clients;}
-\resumeItemShort
-{Implemented critical logistics API integrations using \textbf{Node.js} and \textbf{TypeScript}, resolving data consistency issues and reducing delivery failures.}
+{Developed AI-powered conversational workflows on enterprise platforms and implemented critical logistics API integrations using \textbf{Node.js} and \textbf{TypeScript}, applying idempotent processing to resolve data consistency issues and reduce delivery failures.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -48,11 +52,11 @@
 {Software Engineering Intern (Microservices \& Backend)}{06/2022 --- 09/2023}
 \resumeItemListStart
 \resumeItemShort
-{Architected serverless microservices processing data for \textbf{100k+} clients using \textbf{TypeScript}, \textbf{Node.js} and \textbf{AWS Lambda}, reducing workflow execution time from $4$ days to $3$ hours;}
+{Architected serverless data processing microservices for \textbf{100k+} clients using \textbf{TypeScript}, \textbf{Node.js}, and \textbf{AWS Lambda}, reducing batch workflow execution time from $4$ days to $3$ hours;}
 \resumeItemShort
-{Led third-party API integrations, using \textbf{Django REST Framework}, \textbf{PostgreSQL} and JWT-based authentication to create new services, expanding the company's portfolio and increasing operational revenue;}
+{Implemented asynchronous data and reporting pipelines using \textbf{Python}, \textbf{RabbitMQ}, and \textbf{Celery} with idempotent retry logic to automate high-volume XML extraction and delivery, reducing manual processing time by \textbf{90\%};}
 \resumeItemShort
-{Implemented asynchronous reporting pipelines using \textbf{RabbitMQ}, \textbf{Python}, and \textbf{Celery} to automate high-volume XML report delivery, reducing manual processing time by \textbf{90\%}.}
+{Led third-party API integrations using \textbf{Django REST Framework}, \textbf{PostgreSQL}, and JWT authentication to create new data services and expand the company's product portfolio.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
